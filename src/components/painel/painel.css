@@ -1,0 +1,16 @@
+/*Painel*/
+.painel{
+    width: 100%;
+    border-bottom: #FFAE00 solid 5px;
+    margin-bottom: 20px;
+    padding: 20px 0px 0px 0px;
+  }
+  
+  
+  .painel-title{
+    font-family: 'Berlin Sans FB';
+    color: #00913D;
+    margin: 0;
+    padding: 0;
+  }
+  

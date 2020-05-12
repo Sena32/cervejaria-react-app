@@ -1,0 +1,100 @@
+.card{
+  margin: 0 1em 2em 0;
+  background-color: #fff;
+  border-bottom: #FFAE00 solid 5px;
+  box-shadow: 0px 4px 4px 0px rgba(22, 22, 22, 0.2);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.card-small{
+  width: 250px;
+  height:350px;
+  background-color: #fdc85e;
+  background-image: radial-gradient(#ffe7b6,#fdc85e);
+  align-items: center;
+}
+
+.card-detail{
+  margin-left: 8em;
+  margin-right: 0;
+  width: 30%;
+  color: #5a5a5a;
+}
+.card-detail .beerItem li a{
+  color: #5a5a5a;
+}
+
+.card-description{
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+
+.card-large{
+  width: 600px;
+  height:450px;
+  background-color: #fdc85e;
+  background-image: radial-gradient(#ffe7b6,#fdc85e);
+  align-items: center;
+  justify-content: center;
+}
+
+.small{
+  max-width: 60%;
+  max-height: 70%;
+  padding: 15px;
+  width: auto;
+  height: auto;
+}
+
+
+
+.large{
+  max-width: 70%;
+  max-height: 80%;
+  padding: 15px;
+  width: auto;
+  height: auto;
+}
+
+.card-content {
+  padding: 1.2em;
+  width: 100%;
+  min-height: 6em;
+  margin-bottom: 50px;
+}
+
+
+
+.card--actions{
+  border-top: 1px solid rgb(231, 230, 230);
+  display: flex;
+  padding: 8px;
+  justify-content: flex-end;
+}
+.card-content-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.card--actions-overlay{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: flex-end;
+  justify-content: center !important;
+}
+
+.card h2{
+  margin-left: 1rem;
+  color: #00913D;
+}

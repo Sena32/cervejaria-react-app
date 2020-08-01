@@ -2,15 +2,17 @@ FROM node:10
 
 WORKDIR /app
 
-ENV PATH /app/node_modules/.bin:$PATH
+#ENV PATH /app/node_modules/.bin:$PATH
 
-COPY public /app/public
+#COPY public /app/public
 
-COPY src /app/src
+#COPY src /app/src
 
-COPY package.json /app/package.json
+COPY package.json .
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 3000
 

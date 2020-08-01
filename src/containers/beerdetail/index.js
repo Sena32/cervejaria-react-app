@@ -15,6 +15,7 @@ class BeerDetail extends Component {
 
     state = {
         beer: {},
+        allingredients:{},
         isLoad: true,
     }
 
@@ -25,8 +26,11 @@ class BeerDetail extends Component {
     async getUserData() {
         try {
             const data = await HttpService.get(`beers/${this.props.match.params.id}`)
+            let newIng = []
+            newIng.push(data[0].ingredients)
+            
             this.setState({ beer: data[0] })
-            console.log(data[0])
+            console.log()
         } catch (error) {
             console.error(error)
         } finally {

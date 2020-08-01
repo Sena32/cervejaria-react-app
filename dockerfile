@@ -14,4 +14,5 @@ RUN yarn
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+#CMD [ "yarn", "start" ]
+CMD ["/bin/sh"]

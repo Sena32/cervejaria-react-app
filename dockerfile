@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-WORKDIR /app
+WORKDIR '/app'
 
 #ENV PATH /app/node_modules/.bin:$PATH
 
@@ -10,9 +10,11 @@ WORKDIR /app
 
 COPY package.json .
 
+COPY . .
+
 RUN npm install
 
-COPY . .
+
 
 EXPOSE 3000
 

@@ -6,7 +6,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json /app/package.json
 
-RUN npm install -g yarn
+RUN yarn
 
 RUN yarn install
 

@@ -10,9 +10,9 @@ COPY src /app/src
 
 COPY package.json /app/package.json
 
-RUN yarn
+RUN npm install
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD [ "npm", "start" ]
 #CMD ["/bin/sh"]
